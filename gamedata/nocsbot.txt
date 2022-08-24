@@ -1,0 +1,49 @@
+"Games"
+{
+	"csgo"
+	{
+		"Functions"
+		{
+			"MapEntity_ParseAllEntities"
+			{
+				"signature"  "MapEntity_ParseAllEntities"
+				"callconv"  "cdecl"
+				"return"  "charptr"
+				"this"  "ignore"
+				"arguments"
+				{
+					"pMapData"
+                    {
+                        "type"  "charptr"
+                        "windows"
+                        {
+                            "register"  "ecx"
+                        }
+                    }
+					"pFilter"
+                    {
+                        "type"  "charptr"
+                        "windows"
+                        {
+                            "register"  "edx"
+                        }
+                    }
+                    "bActivateEntities"
+                    {
+                        "type"    "bool"
+                    }
+				}
+			}
+		}
+		
+		"Signatures"
+		{
+			"MapEntity_ParseAllEntities"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\xB8\x38"
+				"linux"		"\x55\x89\xE5\x57\x56\x53\x81\xEC\x6C\x10\x00\x00\x0F"
+			}
+		}
+	}
+}
