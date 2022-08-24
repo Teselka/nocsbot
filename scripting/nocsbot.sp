@@ -14,7 +14,7 @@ DHookSetup hParseAllEntitiesDetour;
 DynamicDetour hShouldCreateEntityDetour;
 Address pLastHookedFilter = Address_Null;
 
-// 
+// IMapEntityFilter::ShouldCreateEntity
 MRESReturn Detour_ShouldCreateEntity(DHookReturn hReturn, DHookParam hParams)
 {
     Address pClassName = DHookGetParamAddress(hParams, 1);
