@@ -1,6 +1,8 @@
 ### nocsbot
 Removes annoying notification from the console (see below).
 
+#### Plugin requires `dhooks` library! You can download it [here](https://github.com/peace-maker/DHooks2/releases).
+
 `Attempted to create unknown entity type cs_bot_patrol_route_waypoint!`
 
 `Can't init cs_bot_patrol_route_waypoint`
